@@ -5,7 +5,7 @@ import { Switch, Route, Link, useHistory } from "react-router-dom";
 import UploadPage from "./upload";
 import Productpage from "./product";
 import { Button } from "antd";
-import { DownCircleOutlined } from "@ant-design/icons";
+import { CloudDownloadOutlined } from "@ant-design/icons";
 
 function App() {
   const history = useHistory();
@@ -21,7 +21,7 @@ function App() {
             onClick={function () {
               history.push("/upload");
             }}
-            icon={<DownCircleOutlined />}
+            icon={<CloudDownloadOutlined />}
           >
             상품
           </Button>
